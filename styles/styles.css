@@ -358,7 +358,7 @@ width: 100px;
   animation: flash 100s linear;
 }
 
-@keyframes flash { 
+/* @keyframes flash { 
   0% {
     bac
   }
@@ -370,7 +370,7 @@ width: 100px;
 
 .blue_light {
   animation: flash 5s;
-}
+} */
 
 @keyframes light { 
   0% {
