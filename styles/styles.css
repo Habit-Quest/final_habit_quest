@@ -355,19 +355,16 @@ width: 100px;
 .red_flash {
   margin: none;
   padding: none;
-  animation: flash 1s linear;
+  animation: flash 100s linear;
 }
 
 @keyframes flash { 
   0% {
-    background-color: red;
-    color: red;
-    border-color: red;
+    bac
   }
   
   100% {
-    color: red;
-    border-color: black;
+
   }
 }
 
