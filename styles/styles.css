@@ -1,0 +1,281 @@
+:root {
+  --health_bar: #e46e6e;
+}
+
+body {
+  margin: 12%;
+  margin-top: 50px;
+}
+
+.health_bar {
+margin-top: 50px;
+float: right;
+width: 70%;
+height: 25px;
+border: solid;
+border-color: black;
+}
+
+.progress_bar {
+width: 100%;
+height: 25px;
+background-color: var(--health_bar);
+}
+
+.arrow {
+  font-size: 15px;
+  margin-left: -5px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.drop_button {
+  height: 25px;
+  border: none;
+  background-color: white;
+  font-size: 100%;
+  text-align: left;
+}
+
+.drop {
+  margin-top: 50px;
+  width: 25%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
+
+.dropdown-content a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 0px 50px;
+}
+
+.drop:hover .dropdown-content {
+  display: block;
+}
+
+a:hover {
+  background-color: aliceblue;
+}
+
+.heart_img {
+  position: absolute;
+  width: 115px;
+  margin-top: -20px;
+}
+
+@media (max-width: 800px) {
+  body {
+      margin: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .drop_button {
+      display: none;
+   }
+   .arrow {
+      display: none;
+   }
+   .hamburger {
+      display: block;
+      font-size: 25px;
+      padding-left: 50px;
+  }
+}
+
+/* Header */
+header {
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header h1 {
+font-size: 50px;
+}
+
+header h3 {
+font-size: 20px;
+font-style: italic;
+font-weight: normal;
+margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+text-align: center;
+margin-top: 50px;
+font-size: 10px;
+display: grid;  
+place-items: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Grid Style */
+
+
+.habit-grid {
+margin-top: 75px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto 1fr 1fr;
+border: solid;
+border-color: black;
+border-radius: 5px;
+width: 100%;
+}
+
+.column-header {
+text-align: center;
+border-bottom: black solid;
+padding: 10px;
+background-color: rgba(228, 110, 110, 0.5);
+color: black;
+height: 65px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#media-header {
+ display: none;
+}
+
+.column-header:not(:first-child) {
+border-left: black solid;
+}
+
+.user-row {
+grid-column: span 4;
+display: grid;
+max-width: 100%;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+row-gap: 5px;
+height: fit-content;
+}
+
+
+.row-cell:not(:last-child) {
+border-right:  black solid 1px;
+display: flex;
+justify-content: center;
+}
+
+.row-cell {
+border-bottom: black solid 1px;
+height: 150px;
+display: flex;
+flex-direction: column;
+}
+
+textarea {
+/* width: calc(100% - 4px); */
+width: 100%;
+height: 100%; 
+padding: 5px; 
+border: none;
+text-align: center;
+box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.editor
+{
+ /* width: calc(100% - 4px); */
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 100%; 
+ padding: 5px; 
+ border: none;
+ text-align: center;
+ box-sizing: border-box;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.editor:empty::before {
+content: "Enter text...";
+color: gray;
+font-style: italic;
+}
+
+
+.editor:hover {
+border: 2px solid pink;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#user-check-box {
+display: flex;
+align-items: center;  
+}
+
+button {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+margin: 5px;
+margin-right: 10px;
+height: fit-content;
+}
+
+button:hover {
+cursor: pointer;
+}
+
+#testAnimation {
+height: 100px;
+width: 100px;
+}
+
+#testAnimation:hover {
+ color: red;
+ border-color: red;
+}
+
+#testAnimation2 {
+height: 100px;
+width: 100px;
+}
+
+#testAnimation2:hover {
+ color: red;
+ border-color: red;
+}
+
+@media (max-width: 700px) {
+  .column-header{
+    display: none;
+  }
+
+  #media-header {
+    display: grid;
+    grid-column: span 4;
+    border-bottom: black solid;
+    padding: 10px;
+    max-width: 100%;
+    text-align: center;
+    background-color: rgba(228, 110, 110, 0.5);
+    color: black;
+    height: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .user-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .row-cell {
+    width: 100%;
+    text-align: center;
+  }
+}
+
