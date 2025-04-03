@@ -279,3 +279,110 @@ width: 100px;
   }
 }
 
+#unfinishedAnimation {
+  height: 100px;
+  width: 100px;
+}
+
+#unfinishedAnimation:hover {
+   color: red;
+   border-color: red;
+}
+
+#finishedAnimation {
+  height: 100px;
+  width: 100px;
+}
+
+#finishedAnimation:hover {
+   color: red;
+   border-color: red;
+}
+
+.heart_img {
+  position: absolute;
+  width: 115px;
+  margin-top: -20px;
+}
+
+.heart_sad {
+  animation: beat 3s infinite;
+}
+
+@keyframes beat { 
+  0% {
+    transform: scale(.8);
+  }
+  5% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(.8);
+  }
+  15% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart_hurt {
+  animation: hurt 5s;
+}
+
+@keyframes hurt { 
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(.8);
+  }
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(5);
+  }
+  100% {
+    transform: scale(.8);
+  }
+}
+
+.red_flash {
+  margin: none;
+  padding: none;
+  animation: flash 1s linear;
+}
+
+@keyframes flash { 
+  0% {
+    background-color: red;
+    color: red;
+    border-color: red;
+  }
+  
+  100% {
+    color: red;
+    border-color: black;
+  }
+}
+
+.blue_light {
+  animation: flash 5s;
+}
+
+@keyframes light { 
+  0% {
+    background-color: blue;
+    color: blue;
+    border-color: blue;
+  }
+  100% {
+    color: blue;
+    border-color: black;
+  }
+}
