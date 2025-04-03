@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="Jade Miller and Brooke Gines">
-    <meta name="description" content="A video game themed habit tracker. Plan and track personalized habits.">
+    <meta name="author" content="Jade Miller and Brooke Gines" />
+    <meta
+      name="description"
+      content="A video game themed habit tracker. Plan and track personalized habits."
+    />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intellectual Habits</title>
@@ -13,10 +16,11 @@
     <script src="scripts/localStorage.js" defer></script>
   </head>
   <body>
-    <header>
-      <h1>Habit Quest</h1>
-    </header>
-    <div class="drop">
+    <div class="flash_animation">
+      <header>
+        <h1>Habit Quest</h1>
+      </header>
+      <div class="drop">
         <button class="drop_button">Intellectual Habits</button>
         <span class="arrow">▼</span>
         <span class="hamburger">☰</span>
@@ -25,43 +29,55 @@
           <a href="financial.html">Financial Habits</a>
           <a href="mental.html">Mental Habits</a>
         </div>
-    </div>
-    
-    <div class="health_bar">
-        <img class="heart_img" src="images/heart.png" alt="Heart Icon">
-        <div class="progress_bar"></div>
-    </div>
+      </div>
 
-    <main> 
-      <div class="habit-grid">
-        <div class = "column-header">
-          <h2>Outcome</h2>
-        </div>
-        <div class="column-header">
-          <h2>Habit Name</h2>
-        </div>
-        <div class="column-header">
-          <h2>Frequency</h2>
-        </div>
-        <div class="column-header">
-          <h2>Description</h2>
-        </div>
-        <div class="user-row">
-          <div id="user-check-box" class="row-cell"> 
-            <button id="unfinishedAnimation">X</button>
-            <button id="finishedAnimation">✔️</button>
+      <div class="health_bar">
+        <img class="heart_img" src="images/heart.png" alt="Heart Icon" />
+        <div class="progress_bar"></div>
+      </div>
+
+      <main>
+        <div class="habit-grid">
+          <div class="column-header">
+            <h2>Outcome</h2>
           </div>
-          <div id="user-habit-name" class="row-cell"> 
-            <div class="editor" id= "habit-name-editor" contenteditable="true"> </div>
+          <div class="column-header">
+            <h2>Habit Name</h2>
           </div>
-          <div id="user-frequency" class="row-cell">
-            <div class="editor" id= "frequency-editor" contenteditable="true"> </div>
+          <div class="column-header">
+            <h2>Frequency</h2>
           </div>
-          <div id="user-description" class="row-cell" >
-            <div class="editor" id= "description-editor" contenteditable="true"> </div>
+          <div class="column-header">
+            <h2>Description</h2>
           </div>
-        </div>
-        <!-- <div class="user-row">
+          <div class="user-row">
+            <div id="user-check-box" class="row-cell">
+              <button id="unfinishedAnimation">X</button>
+              <button id="finishedAnimation">✔️</button>
+            </div>
+            <div id="user-habit-name" class="row-cell">
+              <div
+                class="editor"
+                id="habit-name-editor"
+                contenteditable="true"
+              ></div>
+            </div>
+            <div id="user-frequency" class="row-cell">
+              <div
+                class="editor"
+                id="frequency-editor"
+                contenteditable="true"
+              ></div>
+            </div>
+            <div id="user-description" class="row-cell">
+              <div
+                class="editor"
+                id="description-editor"
+                contenteditable="true"
+              ></div>
+            </div>
+          </div>
+          <!-- <div class="user-row">
           <div id="user-check-box" class="row-cell"> 
             <button>Completed</button>
           </div>
@@ -75,14 +91,14 @@
             <div class="editor" id= "description-editor" contenteditable="true"> </div>
           </div>
         </div> -->
-      </div>
-    </main>
-    <button id="add-row-button">Add Row</button>
-    
-    
-    <footer>
-      <p>&copy; 2025 Habit Quest</p>
-      <p>WDD231 Anna Le Sieur, Jade Miller, Brooke Gines</p>
-    </footer>
+        </div>
+      </main>
+      <button id="add-row-button">Add Row</button>
+
+      <footer>
+        <p>&copy; 2025 Habit Quest</p>
+        <p>WDD231 Anna Le Sieur, Jade Miller, Brooke Gines</p>
+      </footer>
+    </div>
   </body>
 </html>
