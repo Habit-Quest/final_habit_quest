@@ -27,9 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const urlParams = new URLSearchParams(window.location.search);
     const habitCategory = urlParams.get("habit");
+    const capitalizedHabitCategory = habitCategory.charAt(0).toUpperCase() + habitCategory.slice(1);
+    document.querySelector("h1").textContent = `${capitalizedHabitCategory} Habits`;
+
 
     if (habitCategory) {
         console.log("Habit Category:", habitCategory);
-        document.querySelector("h1").textContent = `${habitCategory} Habits`;
+        document.querySelector("h1").textContent = `${capitalizedHabitCategory} Habits`;
     }
 });
