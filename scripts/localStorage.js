@@ -25,4 +25,11 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("TEST3")
     }, false);
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const habitCategory = urlParams.get("habit");
+
+    if (habitCategory) {
+        console.log("Habit Category:", habitCategory);
+        document.querySelector("h1").textContent = `${habitCategory} Habits`;
+    }
 });
