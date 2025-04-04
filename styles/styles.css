@@ -8,18 +8,18 @@ body {
 }
 
 .health_bar {
-margin-top: 50px;
-float: right;
-width: 70%;
-height: 25px;
-border: solid;
-border-color: black;
+  margin-top: 50px;
+  float: right;
+  width: 70%;
+  height: 25px;
+  border: solid;
+  border-color: black;
 }
 
 .progress_bar {
-width: 100%;
-height: 25px;
-background-color: var(--health_bar);
+  width: 100%;
+  height: 25px;
+  background-color: var(--health_bar);
 }
 
 .arrow {
@@ -34,7 +34,6 @@ background-color: var(--health_bar);
 .drop_button {
   height: 25px;
   border: none;
-  background-color: white;
   font-size: 100%;
   text-align: left;
 }
@@ -74,182 +73,187 @@ a:hover {
 
 @media (max-width: 800px) {
   body {
-      margin: 5%;
+    margin: 5%;
   }
 }
 
 @media (max-width: 700px) {
   .drop_button {
-      display: none;
-   }
-   .arrow {
-      display: none;
-   }
-   .hamburger {
-      display: block;
-      font-size: 25px;
-      padding-left: 50px;
+    display: none;
+  }
+  .arrow {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    font-size: 25px;
+    padding-left: 50px;
   }
 }
 
 /* Header */
 header {
-text-align: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 header h1 {
-font-size: 50px;
+  font-size: 50px;
 }
 
 header h3 {
-font-size: 20px;
-font-style: italic;
-font-weight: normal;
-margin-bottom: 50px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 50px;
 }
 
 /* Footer */
 
 footer {
-text-align: center;
-margin-top: 50px;
-font-size: 10px;
-display: grid;  
-place-items: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 10px;
+  display: grid;
+  place-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 /* Grid Style */
 
-
 .habit-grid {
-margin-top: 75px;
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: auto 1fr 1fr;
-border: solid;
-border-color: black;
-border-radius: 5px;
-width: 100%;
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  border: solid;
+  border-color: black;
+  border-radius: 5px;
+  width: 100%;
 }
 
 .column-header {
-text-align: center;
-border-bottom: black solid;
-padding: 10px;
-background-color: rgba(228, 110, 110, 0.5);
-color: black;
-height: 65px;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  border-bottom: black solid;
+  padding: 10px;
+  background-color: rgba(228, 110, 110, 0.5);
+  color: black;
+  height: 65px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 #media-header {
- display: none;
+  display: none;
 }
 
 .column-header:not(:first-child) {
-border-left: black solid;
+  border-left: black solid;
 }
 
 .user-row {
-grid-column: span 4;
-display: grid;
-max-width: 100%;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-row-gap: 5px;
-height: fit-content;
+  grid-column: span 4;
+  display: grid;
+  max-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  height: fit-content;
 }
 
-
 .row-cell:not(:last-child) {
-border-right:  black solid 1px;
-display: flex;
-justify-content: center;
+  border-right: black solid 1px;
+  display: flex;
+  justify-content: center;
 }
 
 .row-cell {
-border-bottom: black solid 1px;
-height: 150px;
-display: flex;
-flex-direction: column;
+  border-bottom: black solid 1px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
 }
 
 textarea {
-/* width: calc(100% - 4px); */
-width: 100%;
-height: 100%; 
-padding: 5px; 
-border: none;
-text-align: center;
-box-sizing: border-box;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* width: calc(100% - 4px); */
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-.editor
-{
- /* width: calc(100% - 4px); */
- width: 100%;
- display: flex;
- flex-direction: column;
- justify-content: center;
- height: 100%; 
- padding: 5px; 
- border: none;
- text-align: center;
- box-sizing: border-box;
- font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.editor {
+  /* width: calc(100% - 4px); */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 5px;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .editor:empty::before {
-content: "Enter text...";
-color: gray;
-font-style: italic;
+  content: "Enter text...";
+  color: gray;
+  font-style: italic;
 }
 
-
 .editor:hover {
-border: 2px solid pink;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid pink;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 #user-check-box {
-display: flex;
-align-items: center;  
+  display: flex;
+  align-items: center;
 }
 
 button {
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin: 5px;
-margin-right: 10px;
-height: fit-content;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 5px;
+  margin-right: 10px;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
 }
 
 button:hover {
-cursor: pointer;
+  cursor: pointer;
 }
 
 #testAnimation {
-height: 100px;
-width: 100px;
+  height: 100px;
+  width: 100px;
+  color: var(--health_bar);
 }
 
 #testAnimation:hover {
- color: red;
- border-color: red;
+  color: red;
+  border-color: red;
 }
 
 #testAnimation2 {
-height: 100px;
-width: 100px;
+  height: 100px;
+  width: 100px;
 }
 
 #testAnimation2:hover {
- color: red;
- border-color: red;
+  color: red;
+  border-color: red;
 }
 
 @media (max-width: 700px) {
-  .column-header{
+  .column-header {
     display: none;
   }
 
@@ -263,7 +267,8 @@ width: 100px;
     background-color: rgba(228, 110, 110, 0.5);
     color: black;
     height: 65px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
 
   .user-row {
@@ -272,7 +277,7 @@ width: 100px;
     align-items: center;
     gap: 10px;
   }
-  
+
   .row-cell {
     width: 100%;
     text-align: center;
@@ -280,23 +285,27 @@ width: 100px;
 }
 
 #unfinishedAnimation {
+  font-size: 30px;
   height: 100px;
   width: 100px;
+  color: var(--health_bar);
 }
 
 #unfinishedAnimation:hover {
-   color: red;
-   border-color: red;
+  color: red;
+  border-color: red;
 }
 
 #finishedAnimation {
+  font-size: 30px;
   height: 100px;
   width: 100px;
+  color: var(--health_bar);
 }
 
 #finishedAnimation:hover {
-   color: red;
-   border-color: red;
+  color: red;
+  border-color: red;
 }
 
 .heart_img {
@@ -309,15 +318,15 @@ width: 100px;
   animation: beat 3s infinite;
 }
 
-@keyframes beat { 
+@keyframes beat {
   0% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   5% {
     transform: scale(1);
   }
   10% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   15% {
     transform: scale(1);
@@ -328,58 +337,44 @@ width: 100px;
 }
 
 .heart_hurt {
-  animation: hurt 5s;
+  animation: hurt .5s;
 }
 
-@keyframes hurt { 
+@keyframes hurt {
   0% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   50% {
-    transform: scale(5);
+    transform: scale(1);
   }
   100% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   0% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
   50% {
-    transform: scale(5);
+    transform: scale(1);
   }
   100% {
-    transform: scale(.8);
+    transform: scale(0.8);
   }
 }
 
 .red_flash {
   margin: none;
   padding: none;
-  animation: flash 100s linear;
+  animation: flash 5s linear;
 }
 
-/* @keyframes flash { 
+@keyframes flash {
   0% {
-    bac
+    background-color: var(--health_bar);
   }
-  
-  100% {
-
-  }
-}
-
-.blue_light {
-  animation: flash 5s;
-} */
-
-@keyframes light { 
-  0% {
-    background-color: blue;
-    color: blue;
-    border-color: blue;
+  50% {
+    background-color: red;
   }
   100% {
-    color: blue;
-    border-color: black;
+    background-color: var(--health_bar);
   }
 }

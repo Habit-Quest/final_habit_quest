@@ -3,13 +3,10 @@ fail_button.addEventListener("click", fail);
 
 let succeed_button = document.getElementById("finishedAnimation");
 succeed_button.addEventListener("click", succeed);
-
 let progress_percent = 100;
-// const key
-// on load
+
 
 function fail() {
-// onclick
     let heart_img = document.querySelector(".heart_img");
     let progress_bar = document.querySelector(".progress_bar");
     let flash_animation = document.querySelector(".flash_animation");
@@ -23,8 +20,7 @@ function fail() {
         setTimeout((n) => {
             flash_animation.classList.remove("red_flash");
             heart_img.classList.remove("heart_hurt");
-        }, 100)
-    // in miliseconds
+        }, 1000)
         break
     }
 
@@ -32,11 +28,9 @@ function fail() {
         heart_img.classList.add("heart_sad");
         break
     }
-  
 }
 
 function succeed() {
-// onclick
     fail_button.classList.add("succeed_animation")
 
     while (progress_percent != 100) {
